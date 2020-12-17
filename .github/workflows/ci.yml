@@ -372,10 +372,11 @@ jobs:
       #     Invoke-AtomicTest T1546.011
       #   shell: pwsh
       # Does not compute
-      - run: |
-          Import-Module "C:\AtomicRedTeam\invoke-atomicredteam\Invoke-AtomicRedTeam.psd1" -Force
-          Invoke-AtomicTest T1546.012
-        shell: pwsh
+      # - run: |
+      #     Import-Module "C:\AtomicRedTeam\invoke-atomicredteam\Invoke-AtomicRedTeam.psd1" -Force
+      #     Invoke-AtomicTest T1546.012
+      #   shell: pwsh
+      # Does not compute
       - run: |
           Import-Module "C:\AtomicRedTeam\invoke-atomicredteam\Invoke-AtomicRedTeam.psd1" -Force
           Invoke-AtomicTest T1546.013
