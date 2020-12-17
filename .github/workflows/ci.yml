@@ -19,207 +19,409 @@ jobs:
           Import-Module "C:\AtomicRedTeam\invoke-atomicredteam\Invoke-AtomicRedTeam.psd1" -Force
           Invoke-AtomicTest T1037.001 -GetPrereqs
         shell: pwsh
-      - run: Invoke-AtomicTest T1037.002 -GetPrereqs
-        shell: pwsh
-      - run: Invoke-AtomicTest T1037.004 -GetPrereqs
-        shell: pwsh
-      - run: Invoke-AtomicTest T1037.005 -GetPrereqs
-        shell: pwsh
-      - run: Invoke-AtomicTest T1053.001 -GetPrereqs
-        shell: pwsh
-      - run: Invoke-AtomicTest T1053.002 -GetPrereqs
-        shell: pwsh
-      - run: Invoke-AtomicTest T1053.003 -GetPrereqs
-        shell: pwsh
-      - run: Invoke-AtomicTest T1053.004 -GetPrereqs
-        shell: pwsh
-      - run: Invoke-AtomicTest T1053.005 -GetPrereqs
-        shell: pwsh
-      - run: Invoke-AtomicTest T1078.001 -GetPrereqs
-        shell: pwsh
-      - run: Invoke-AtomicTest T1078.003 -GetPrereqs
-        shell: pwsh
-      - run: Invoke-AtomicTest T1098 -GetPrereqs
-        shell: pwsh
-      - run: Invoke-AtomicTest T1098.004 -GetPrereqs
-        shell: pwsh
-      - run: Invoke-AtomicTest T1133 -GetPrereqs
-        shell: pwsh
-      - run: Invoke-AtomicTest T1136.001 -GetPrereqs
-        shell: pwsh
-      - run: Invoke-AtomicTest T1136.002 -GetPrereqs
-        shell: pwsh
-      - run: Invoke-AtomicTest T1137.002 -GetPrereqs
-        shell: pwsh
-      - run: Invoke-AtomicTest T1176 -GetPrereqs
-        shell: pwsh
-      - run: Invoke-AtomicTest T1197 -GetPrereqs
-        shell: pwsh
-      - run: Invoke-AtomicTest T1505.001 -GetPrereqs
-        shell: pwsh
-      - run: Invoke-AtomicTest T1505.002 -GetPrereqs
-        shell: pwsh
-      - run: Invoke-AtomicTest T1505.003 -GetPrereqs
-        shell: pwsh
-      - run: Invoke-AtomicTest T1543.001 -GetPrereqs
-        shell: pwsh
-      - run: Invoke-AtomicTest T1543.002 -GetPrereqs
-        shell: pwsh
-      - run: Invoke-AtomicTest T1543.003 -GetPrereqs
-        shell: pwsh
-      - run: Invoke-AtomicTest T1543.004 -GetPrereqs
-        shell: pwsh
-      - run: Invoke-AtomicTest T1546.001 -GetPrereqs
-        shell: pwsh
-      - run: Invoke-AtomicTest T1546.002 -GetPrereqs
-        shell: pwsh
-      - run: Invoke-AtomicTest T1546.003 -GetPrereqs
-        shell: pwsh
-      - run: Invoke-AtomicTest T1546.004 -GetPrereqs
-        shell: pwsh
-      - run: Invoke-AtomicTest T1546.005 -GetPrereqs
-        shell: pwsh
-      - run: Invoke-AtomicTest T1546.007 -GetPrereqs
-        shell: pwsh
-      - run: Invoke-AtomicTest T1546.008 -GetPrereqs
-        shell: pwsh
-      - run: Invoke-AtomicTest T1546.010 -GetPrereqs
-        shell: pwsh
-      - run: Invoke-AtomicTest T1546.011 -GetPrereqs
-        shell: pwsh
-      - run: Invoke-AtomicTest T1546.012 -GetPrereqs
-        shell: pwsh
-      - run: Invoke-AtomicTest T1546.013 -GetPrereqs
-        shell: pwsh
-      - run: Invoke-AtomicTest T1546.014 -GetPrereqs
-        shell: pwsh
-      - run: Invoke-AtomicTest T1547.001 -GetPrereqs
-        shell: pwsh
-      - run: Invoke-AtomicTest T1547.004 -GetPrereqs
-        shell: pwsh
-      - run: Invoke-AtomicTest T1547.005 -GetPrereqs
-        shell: pwsh
-      - run: Invoke-AtomicTest T1547.006 -GetPrereqs
-        shell: pwsh
-      - run: Invoke-AtomicTest T1547.007 -GetPrereqs
-        shell: pwsh
-      - run: Invoke-AtomicTest T1547.009 -GetPrereqs
-        shell: pwsh
-      - run: Invoke-AtomicTest T1547.011 -GetPrereqs
-        shell: pwsh
-      - run: Invoke-AtomicTest T1574.001 -GetPrereqs
-        shell: pwsh
-      - run: Invoke-AtomicTest T1574.002 -GetPrereqs
-        shell: pwsh
-      - run: Invoke-AtomicTest T1574.006 -GetPrereqs
-        shell: pwsh
-      - run: Invoke-AtomicTest T1574.009 -GetPrereqs
-        shell: pwsh
-      - run: Invoke-AtomicTest T1574.011 -GetPrereqs
-        shell: pwsh
-      - run: Invoke-AtomicTest T1574.012 -GetPrereqs
-        shell: pwsh
-      - run: Invoke-AtomicTest T1037.001
-        shell: pwsh
-      - run: Invoke-AtomicTest T1037.002
-        shell: pwsh
-      - run: Invoke-AtomicTest T1037.004
-        shell: pwsh
-      - run: Invoke-AtomicTest T1037.005
-        shell: pwsh
-      - run: Invoke-AtomicTest T1053.001
-        shell: pwsh
-      - run: Invoke-AtomicTest T1053.002
-        shell: pwsh
-      - run: Invoke-AtomicTest T1053.003
-        shell: pwsh
-      - run: Invoke-AtomicTest T1053.004
-        shell: pwsh
-      - run: Invoke-AtomicTest T1053.005
-        shell: pwsh
-      - run: Invoke-AtomicTest T1078.001
-        shell: pwsh
-      - run: Invoke-AtomicTest T1078.003
-        shell: pwsh
-      - run: Invoke-AtomicTest T1098
-        shell: pwsh
-      - run: Invoke-AtomicTest T1098.004
-        shell: pwsh
-      - run: Invoke-AtomicTest T1133
-        shell: pwsh
-      - run: Invoke-AtomicTest T1136.001
-        shell: pwsh
-      - run: Invoke-AtomicTest T1136.002
-        shell: pwsh
-      - run: Invoke-AtomicTest T1137.002
-        shell: pwsh
-      - run: Invoke-AtomicTest T1176
-        shell: pwsh
-      - run: Invoke-AtomicTest T1197
-        shell: pwsh
-      - run: Invoke-AtomicTest T1505.001
-        shell: pwsh
-      - run: Invoke-AtomicTest T1505.002
-        shell: pwsh
-      - run: Invoke-AtomicTest T1505.003
-        shell: pwsh
-      - run: Invoke-AtomicTest T1543.001
-        shell: pwsh
-      - run: Invoke-AtomicTest T1543.002
-        shell: pwsh
-      - run: Invoke-AtomicTest T1546.001
-        shell: pwsh
-      - run: Invoke-AtomicTest T1543.003
-        shell: pwsh
-      - run: Invoke-AtomicTest T1543.004
-        shell: pwsh
-      - run: Invoke-AtomicTest T1546.002
-        shell: pwsh
-      - run: Invoke-AtomicTest T1546.003
-        shell: pwsh
-      - run: Invoke-AtomicTest T1546.004
-        shell: pwsh
-      - run: Invoke-AtomicTest T1546.005
-        shell: pwsh
-      - run: Invoke-AtomicTest T1546.007
-        shell: pwsh
-      - run: Invoke-AtomicTest T1546.008
-        shell: pwsh
-      - run: Invoke-AtomicTest T1546.010
-        shell: pwsh
-      - run: Invoke-AtomicTest T1546.011
-        shell: pwsh
-      - run: Invoke-AtomicTest T1546.012
-        shell: pwsh
-      - run: Invoke-AtomicTest T1546.013
-        shell: pwsh
-      - run: Invoke-AtomicTest T1546.014
-        shell: pwsh
-      - run: Invoke-AtomicTest T1547.001
-        shell: pwsh
-      - run: Invoke-AtomicTest T1547.004
-        shell: pwsh
-      - run: Invoke-AtomicTest T1547.005
-        shell: pwsh
-      - run: Invoke-AtomicTest T1547.006
-        shell: pwsh
-      - run: Invoke-AtomicTest T1547.007
-        shell: pwsh
-      - run: Invoke-AtomicTest T1547.009
-        shell: pwsh
-      - run: Invoke-AtomicTest T1547.011
-        shell: pwsh
-      - run: Invoke-AtomicTest T1574.001
-        shell: pwsh
-      - run: Invoke-AtomicTest T1574.002
-        shell: pwsh
-      - run: Invoke-AtomicTest T1574.006
-        shell: pwsh
-      - run: Invoke-AtomicTest T1574.009
-        shell: pwsh
-      - run: Invoke-AtomicTest T1574.011
-        shell: pwsh
-      - run: Invoke-AtomicTest T1574.012
+      - run: |
+          Import-Module "C:\AtomicRedTeam\invoke-atomicredteam\Invoke-AtomicRedTeam.psd1" -Force
+          Invoke-AtomicTest T1037.002 -GetPrereqs
+        shell: pwsh
+      - run: |
+          Import-Module "C:\AtomicRedTeam\invoke-atomicredteam\Invoke-AtomicRedTeam.psd1" -Force
+          Invoke-AtomicTest T1037.004 -GetPrereqs
+        shell: pwsh
+      - run: |
+          Import-Module "C:\AtomicRedTeam\invoke-atomicredteam\Invoke-AtomicRedTeam.psd1" -Force
+          Invoke-AtomicTest T1037.005 -GetPrereqs
+        shell: pwsh
+      - run: |
+          Import-Module "C:\AtomicRedTeam\invoke-atomicredteam\Invoke-AtomicRedTeam.psd1" -Force
+          Invoke-AtomicTest T1053.001 -GetPrereqs
+        shell: pwsh
+      - run: |
+          Import-Module "C:\AtomicRedTeam\invoke-atomicredteam\Invoke-AtomicRedTeam.psd1" -Force
+          Invoke-AtomicTest T1053.002 -GetPrereqs
+        shell: pwsh
+      - run: |
+          Import-Module "C:\AtomicRedTeam\invoke-atomicredteam\Invoke-AtomicRedTeam.psd1" -Force
+          Invoke-AtomicTest T1053.003 -GetPrereqs
+        shell: pwsh
+      - run: |
+          Import-Module "C:\AtomicRedTeam\invoke-atomicredteam\Invoke-AtomicRedTeam.psd1" -Force
+          Invoke-AtomicTest T1053.004 -GetPrereqs
+        shell: pwsh
+      - run: |
+          Import-Module "C:\AtomicRedTeam\invoke-atomicredteam\Invoke-AtomicRedTeam.psd1" -Force
+          Invoke-AtomicTest T1053.005 -GetPrereqs
+        shell: pwsh
+      - run: |
+          Import-Module "C:\AtomicRedTeam\invoke-atomicredteam\Invoke-AtomicRedTeam.psd1" -Force
+          Invoke-AtomicTest T1078.001 -GetPrereqs
+        shell: pwsh
+      - run: |
+          Import-Module "C:\AtomicRedTeam\invoke-atomicredteam\Invoke-AtomicRedTeam.psd1" -Force
+          Invoke-AtomicTest T1078.003 -GetPrereqs
+        shell: pwsh
+      - run: |
+          Import-Module "C:\AtomicRedTeam\invoke-atomicredteam\Invoke-AtomicRedTeam.psd1" -Force
+          Invoke-AtomicTest T1098 -GetPrereqs
+        shell: pwsh
+      - run: |
+          Import-Module "C:\AtomicRedTeam\invoke-atomicredteam\Invoke-AtomicRedTeam.psd1" -Force
+          Invoke-AtomicTest T1098.004 -GetPrereqs
+        shell: pwsh
+      - run: |
+          Import-Module "C:\AtomicRedTeam\invoke-atomicredteam\Invoke-AtomicRedTeam.psd1" -Force
+          Invoke-AtomicTest T1133 -GetPrereqs
+        shell: pwsh
+      - run: |
+          Import-Module "C:\AtomicRedTeam\invoke-atomicredteam\Invoke-AtomicRedTeam.psd1" -Force
+          Invoke-AtomicTest T1136.001 -GetPrereqs
+        shell: pwsh
+      - run: |
+          Import-Module "C:\AtomicRedTeam\invoke-atomicredteam\Invoke-AtomicRedTeam.psd1" -Force
+          Invoke-AtomicTest T1136.002 -GetPrereqs
+        shell: pwsh
+      - run: |
+          Import-Module "C:\AtomicRedTeam\invoke-atomicredteam\Invoke-AtomicRedTeam.psd1" -Force
+          Invoke-AtomicTest T1137.002 -GetPrereqs
+        shell: pwsh
+      - run: |
+          Import-Module "C:\AtomicRedTeam\invoke-atomicredteam\Invoke-AtomicRedTeam.psd1" -Force
+          Invoke-AtomicTest T1176 -GetPrereqs
+        shell: pwsh
+      - run: |
+          Import-Module "C:\AtomicRedTeam\invoke-atomicredteam\Invoke-AtomicRedTeam.psd1" -Force
+          Invoke-AtomicTest T1197 -GetPrereqs
+        shell: pwsh
+      - run: |
+          Import-Module "C:\AtomicRedTeam\invoke-atomicredteam\Invoke-AtomicRedTeam.psd1" -Force
+          Invoke-AtomicTest T1505.001 -GetPrereqs
+        shell: pwsh
+      - run: |
+          Import-Module "C:\AtomicRedTeam\invoke-atomicredteam\Invoke-AtomicRedTeam.psd1" -Force
+          Invoke-AtomicTest T1505.002 -GetPrereqs
+        shell: pwsh
+      - run: |
+          Import-Module "C:\AtomicRedTeam\invoke-atomicredteam\Invoke-AtomicRedTeam.psd1" -Force
+          Invoke-AtomicTest T1505.003 -GetPrereqs
+        shell: pwsh
+      - run: |
+          Import-Module "C:\AtomicRedTeam\invoke-atomicredteam\Invoke-AtomicRedTeam.psd1" -Force
+          Invoke-AtomicTest T1543.001 -GetPrereqs
+        shell: pwsh
+      - run: |
+          Import-Module "C:\AtomicRedTeam\invoke-atomicredteam\Invoke-AtomicRedTeam.psd1" -Force
+          Invoke-AtomicTest T1543.002 -GetPrereqs
+        shell: pwsh
+      - run: |
+          Import-Module "C:\AtomicRedTeam\invoke-atomicredteam\Invoke-AtomicRedTeam.psd1" -Force
+          Invoke-AtomicTest T1543.003 -GetPrereqs
+        shell: pwsh
+      - run: |
+          Import-Module "C:\AtomicRedTeam\invoke-atomicredteam\Invoke-AtomicRedTeam.psd1" -Force
+          Invoke-AtomicTest T1543.004 -GetPrereqs
+        shell: pwsh
+      - run: |
+          Import-Module "C:\AtomicRedTeam\invoke-atomicredteam\Invoke-AtomicRedTeam.psd1" -Force
+          Invoke-AtomicTest T1546.001 -GetPrereqs
+        shell: pwsh
+      - run: |
+          Import-Module "C:\AtomicRedTeam\invoke-atomicredteam\Invoke-AtomicRedTeam.psd1" -Force
+          Invoke-AtomicTest T1546.002 -GetPrereqs
+        shell: pwsh
+      - run: |
+          Import-Module "C:\AtomicRedTeam\invoke-atomicredteam\Invoke-AtomicRedTeam.psd1" -Force
+          Invoke-AtomicTest T1546.003 -GetPrereqs
+        shell: pwsh
+      - run: |
+          Import-Module "C:\AtomicRedTeam\invoke-atomicredteam\Invoke-AtomicRedTeam.psd1" -Force
+          Invoke-AtomicTest T1546.004 -GetPrereqs
+        shell: pwsh
+      - run: |
+          Import-Module "C:\AtomicRedTeam\invoke-atomicredteam\Invoke-AtomicRedTeam.psd1" -Force
+          Invoke-AtomicTest T1546.005 -GetPrereqs
+        shell: pwsh
+      - run: |
+          Import-Module "C:\AtomicRedTeam\invoke-atomicredteam\Invoke-AtomicRedTeam.psd1" -Force
+          Invoke-AtomicTest T1546.007 -GetPrereqs
+        shell: pwsh
+      - run: |
+          Import-Module "C:\AtomicRedTeam\invoke-atomicredteam\Invoke-AtomicRedTeam.psd1" -Force
+          Invoke-AtomicTest T1546.008 -GetPrereqs
+        shell: pwsh
+      - run: |
+          Import-Module "C:\AtomicRedTeam\invoke-atomicredteam\Invoke-AtomicRedTeam.psd1" -Force
+          Invoke-AtomicTest T1546.010 -GetPrereqs
+        shell: pwsh
+      - run: |
+          Import-Module "C:\AtomicRedTeam\invoke-atomicredteam\Invoke-AtomicRedTeam.psd1" -Force
+          Invoke-AtomicTest T1546.011 -GetPrereqs
+        shell: pwsh
+      - run: |
+          Import-Module "C:\AtomicRedTeam\invoke-atomicredteam\Invoke-AtomicRedTeam.psd1" -Force
+          Invoke-AtomicTest T1546.012 -GetPrereqs
+        shell: pwsh
+      - run: |
+          Import-Module "C:\AtomicRedTeam\invoke-atomicredteam\Invoke-AtomicRedTeam.psd1" -Force
+          Invoke-AtomicTest T1546.013 -GetPrereqs
+        shell: pwsh
+      - run: |
+          Import-Module "C:\AtomicRedTeam\invoke-atomicredteam\Invoke-AtomicRedTeam.psd1" -Force
+          Invoke-AtomicTest T1546.014 -GetPrereqs
+        shell: pwsh
+      - run: |
+          Import-Module "C:\AtomicRedTeam\invoke-atomicredteam\Invoke-AtomicRedTeam.psd1" -Force
+          Invoke-AtomicTest T1547.001 -GetPrereqs
+        shell: pwsh
+      - run: |
+          Import-Module "C:\AtomicRedTeam\invoke-atomicredteam\Invoke-AtomicRedTeam.psd1" -Force
+          Invoke-AtomicTest T1547.004 -GetPrereqs
+        shell: pwsh
+      - run: |
+          Import-Module "C:\AtomicRedTeam\invoke-atomicredteam\Invoke-AtomicRedTeam.psd1" -Force
+          Invoke-AtomicTest T1547.005 -GetPrereqs
+        shell: pwsh
+      - run: |
+          Import-Module "C:\AtomicRedTeam\invoke-atomicredteam\Invoke-AtomicRedTeam.psd1" -Force
+          Invoke-AtomicTest T1547.006 -GetPrereqs
+        shell: pwsh
+      - run: |
+          Import-Module "C:\AtomicRedTeam\invoke-atomicredteam\Invoke-AtomicRedTeam.psd1" -Force
+          Invoke-AtomicTest T1547.007 -GetPrereqs
+        shell: pwsh
+      - run: |
+          Import-Module "C:\AtomicRedTeam\invoke-atomicredteam\Invoke-AtomicRedTeam.psd1" -Force
+          Invoke-AtomicTest T1547.009 -GetPrereqs
+        shell: pwsh
+      - run: |
+          Import-Module "C:\AtomicRedTeam\invoke-atomicredteam\Invoke-AtomicRedTeam.psd1" -Force
+          Invoke-AtomicTest T1547.011 -GetPrereqs
+        shell: pwsh
+      - run: |
+          Import-Module "C:\AtomicRedTeam\invoke-atomicredteam\Invoke-AtomicRedTeam.psd1" -Force
+          Invoke-AtomicTest T1574.001 -GetPrereqs
+        shell: pwsh
+      - run: |
+          Import-Module "C:\AtomicRedTeam\invoke-atomicredteam\Invoke-AtomicRedTeam.psd1" -Force
+          Invoke-AtomicTest T1574.002 -GetPrereqs
+        shell: pwsh
+      - run: |
+          Import-Module "C:\AtomicRedTeam\invoke-atomicredteam\Invoke-AtomicRedTeam.psd1" -Force
+          Invoke-AtomicTest T1574.006 -GetPrereqs
+        shell: pwsh
+      - run: |
+          Import-Module "C:\AtomicRedTeam\invoke-atomicredteam\Invoke-AtomicRedTeam.psd1" -Force
+          Invoke-AtomicTest T1574.009 -GetPrereqs
+        shell: pwsh
+      - run: |
+          Import-Module "C:\AtomicRedTeam\invoke-atomicredteam\Invoke-AtomicRedTeam.psd1" -Force
+          Invoke-AtomicTest T1574.011 -GetPrereqs
+        shell: pwsh
+      - run: |
+          Import-Module "C:\AtomicRedTeam\invoke-atomicredteam\Invoke-AtomicRedTeam.psd1" -Force
+          Invoke-AtomicTest T1574.012 -GetPrereqs
+        shell: pwsh
+      - run: |
+          Import-Module "C:\AtomicRedTeam\invoke-atomicredteam\Invoke-AtomicRedTeam.psd1" -Force
+          Invoke-AtomicTest T1037.001
+        shell: pwsh
+      - run: |
+          Import-Module "C:\AtomicRedTeam\invoke-atomicredteam\Invoke-AtomicRedTeam.psd1" -Force
+          Invoke-AtomicTest T1037.002
+        shell: pwsh
+      - run: |
+          Import-Module "C:\AtomicRedTeam\invoke-atomicredteam\Invoke-AtomicRedTeam.psd1" -Force
+          Invoke-AtomicTest T1037.004
+        shell: pwsh
+      - run: |
+          Import-Module "C:\AtomicRedTeam\invoke-atomicredteam\Invoke-AtomicRedTeam.psd1" -Force
+          Invoke-AtomicTest T1037.005
+        shell: pwsh
+      - run: |
+          Import-Module "C:\AtomicRedTeam\invoke-atomicredteam\Invoke-AtomicRedTeam.psd1" -Force
+          Invoke-AtomicTest T1053.001
+        shell: pwsh
+      - run: |
+          Import-Module "C:\AtomicRedTeam\invoke-atomicredteam\Invoke-AtomicRedTeam.psd1" -Force
+          Invoke-AtomicTest T1053.002
+        shell: pwsh
+      - run: |
+          Import-Module "C:\AtomicRedTeam\invoke-atomicredteam\Invoke-AtomicRedTeam.psd1" -Force
+          Invoke-AtomicTest T1053.003
+        shell: pwsh
+      - run: |
+          Import-Module "C:\AtomicRedTeam\invoke-atomicredteam\Invoke-AtomicRedTeam.psd1" -Force
+          Invoke-AtomicTest T1053.004
+        shell: pwsh
+      - run: |
+          Import-Module "C:\AtomicRedTeam\invoke-atomicredteam\Invoke-AtomicRedTeam.psd1" -Force
+          Invoke-AtomicTest T1053.005
+        shell: pwsh
+      - run: |
+          Import-Module "C:\AtomicRedTeam\invoke-atomicredteam\Invoke-AtomicRedTeam.psd1" -Force
+          Invoke-AtomicTest T1078.001
+        shell: pwsh
+      - run: |
+          Import-Module "C:\AtomicRedTeam\invoke-atomicredteam\Invoke-AtomicRedTeam.psd1" -Force
+          Invoke-AtomicTest T1078.003
+        shell: pwsh
+      - run: |
+          Import-Module "C:\AtomicRedTeam\invoke-atomicredteam\Invoke-AtomicRedTeam.psd1" -Force
+          Invoke-AtomicTest T1098
+        shell: pwsh
+      - run: |
+          Import-Module "C:\AtomicRedTeam\invoke-atomicredteam\Invoke-AtomicRedTeam.psd1" -Force
+          Invoke-AtomicTest T1098.004
+        shell: pwsh
+      - run: |
+          Import-Module "C:\AtomicRedTeam\invoke-atomicredteam\Invoke-AtomicRedTeam.psd1" -Force
+          Invoke-AtomicTest T1133
+        shell: pwsh
+      - run: |
+          Import-Module "C:\AtomicRedTeam\invoke-atomicredteam\Invoke-AtomicRedTeam.psd1" -Force
+          Invoke-AtomicTest T1136.001
+        shell: pwsh
+      - run: |
+          Import-Module "C:\AtomicRedTeam\invoke-atomicredteam\Invoke-AtomicRedTeam.psd1" -Force
+          Invoke-AtomicTest T1136.002
+        shell: pwsh
+      - run: |
+          Import-Module "C:\AtomicRedTeam\invoke-atomicredteam\Invoke-AtomicRedTeam.psd1" -Force
+          Invoke-AtomicTest T1137.002
+        shell: pwsh
+      - run: |
+          Import-Module "C:\AtomicRedTeam\invoke-atomicredteam\Invoke-AtomicRedTeam.psd1" -Force
+          Invoke-AtomicTest T1176
+        shell: pwsh
+      - run: |
+          Import-Module "C:\AtomicRedTeam\invoke-atomicredteam\Invoke-AtomicRedTeam.psd1" -Force
+          Invoke-AtomicTest T1197
+        shell: pwsh
+      - run: |
+          Import-Module "C:\AtomicRedTeam\invoke-atomicredteam\Invoke-AtomicRedTeam.psd1" -Force
+          Invoke-AtomicTest T1505.001
+        shell: pwsh
+      - run: |
+          Import-Module "C:\AtomicRedTeam\invoke-atomicredteam\Invoke-AtomicRedTeam.psd1" -Force
+          Invoke-AtomicTest T1505.002
+        shell: pwsh
+      - run: |
+          Import-Module "C:\AtomicRedTeam\invoke-atomicredteam\Invoke-AtomicRedTeam.psd1" -Force
+          Invoke-AtomicTest T1505.003
+        shell: pwsh
+      - run: |
+          Import-Module "C:\AtomicRedTeam\invoke-atomicredteam\Invoke-AtomicRedTeam.psd1" -Force
+          Invoke-AtomicTest T1543.001
+        shell: pwsh
+      - run: |
+          Import-Module "C:\AtomicRedTeam\invoke-atomicredteam\Invoke-AtomicRedTeam.psd1" -Force
+          Invoke-AtomicTest T1543.002
+        shell: pwsh
+      - run: |
+          Import-Module "C:\AtomicRedTeam\invoke-atomicredteam\Invoke-AtomicRedTeam.psd1" -Force
+          Invoke-AtomicTest T1546.001
+        shell: pwsh
+      - run: |
+          Import-Module "C:\AtomicRedTeam\invoke-atomicredteam\Invoke-AtomicRedTeam.psd1" -Force
+          Invoke-AtomicTest T1543.003
+        shell: pwsh
+      - run: |
+          Import-Module "C:\AtomicRedTeam\invoke-atomicredteam\Invoke-AtomicRedTeam.psd1" -Force
+          Invoke-AtomicTest T1543.004
+        shell: pwsh
+      - run: |
+          Import-Module "C:\AtomicRedTeam\invoke-atomicredteam\Invoke-AtomicRedTeam.psd1" -Force
+          Invoke-AtomicTest T1546.002
+        shell: pwsh
+      - run: |
+          Import-Module "C:\AtomicRedTeam\invoke-atomicredteam\Invoke-AtomicRedTeam.psd1" -Force
+          Invoke-AtomicTest T1546.003
+        shell: pwsh
+      - run: |
+          Import-Module "C:\AtomicRedTeam\invoke-atomicredteam\Invoke-AtomicRedTeam.psd1" -Force
+          Invoke-AtomicTest T1546.004
+        shell: pwsh
+      - run: |
+          Import-Module "C:\AtomicRedTeam\invoke-atomicredteam\Invoke-AtomicRedTeam.psd1" -Force
+          Invoke-AtomicTest T1546.005
+        shell: pwsh
+      - run: |
+          Import-Module "C:\AtomicRedTeam\invoke-atomicredteam\Invoke-AtomicRedTeam.psd1" -Force
+          Invoke-AtomicTest T1546.007
+        shell: pwsh
+      - run: |
+          Import-Module "C:\AtomicRedTeam\invoke-atomicredteam\Invoke-AtomicRedTeam.psd1" -Force
+          Invoke-AtomicTest T1546.008
+        shell: pwsh
+      - run: |
+          Import-Module "C:\AtomicRedTeam\invoke-atomicredteam\Invoke-AtomicRedTeam.psd1" -Force
+          Invoke-AtomicTest T1546.010
+        shell: pwsh
+      - run: |
+          Import-Module "C:\AtomicRedTeam\invoke-atomicredteam\Invoke-AtomicRedTeam.psd1" -Force
+          Invoke-AtomicTest T1546.011
+        shell: pwsh
+      - run: |
+          Import-Module "C:\AtomicRedTeam\invoke-atomicredteam\Invoke-AtomicRedTeam.psd1" -Force
+          Invoke-AtomicTest T1546.012
+        shell: pwsh
+      - run: |
+          Import-Module "C:\AtomicRedTeam\invoke-atomicredteam\Invoke-AtomicRedTeam.psd1" -Force
+          Invoke-AtomicTest T1546.013
+        shell: pwsh
+      - run: |
+          Import-Module "C:\AtomicRedTeam\invoke-atomicredteam\Invoke-AtomicRedTeam.psd1" -Force
+          Invoke-AtomicTest T1546.014
+        shell: pwsh
+      - run: |
+          Import-Module "C:\AtomicRedTeam\invoke-atomicredteam\Invoke-AtomicRedTeam.psd1" -Force
+          Invoke-AtomicTest T1547.001
+        shell: pwsh
+      - run: |
+          Import-Module "C:\AtomicRedTeam\invoke-atomicredteam\Invoke-AtomicRedTeam.psd1" -Force
+          Invoke-AtomicTest T1547.004
+        shell: pwsh
+      - run: |
+          Import-Module "C:\AtomicRedTeam\invoke-atomicredteam\Invoke-AtomicRedTeam.psd1" -Force
+          Invoke-AtomicTest T1547.005
+        shell: pwsh
+      - run: |
+          Import-Module "C:\AtomicRedTeam\invoke-atomicredteam\Invoke-AtomicRedTeam.psd1" -Force
+          Invoke-AtomicTest T1547.006
+        shell: pwsh
+      - run: |
+          Import-Module "C:\AtomicRedTeam\invoke-atomicredteam\Invoke-AtomicRedTeam.psd1" -Force
+          Invoke-AtomicTest T1547.007
+        shell: pwsh
+      - run: |
+          Import-Module "C:\AtomicRedTeam\invoke-atomicredteam\Invoke-AtomicRedTeam.psd1" -Force
+          Invoke-AtomicTest T1547.009
+        shell: pwsh
+      - run: |
+          Import-Module "C:\AtomicRedTeam\invoke-atomicredteam\Invoke-AtomicRedTeam.psd1" -Force
+          Invoke-AtomicTest T1547.011
+        shell: pwsh
+      - run: |
+          Import-Module "C:\AtomicRedTeam\invoke-atomicredteam\Invoke-AtomicRedTeam.psd1" -Force
+          Invoke-AtomicTest T1574.001
+        shell: pwsh
+      - run: |
+          Import-Module "C:\AtomicRedTeam\invoke-atomicredteam\Invoke-AtomicRedTeam.psd1" -Force
+          Invoke-AtomicTest T1574.002
+        shell: pwsh
+      - run: |
+          Import-Module "C:\AtomicRedTeam\invoke-atomicredteam\Invoke-AtomicRedTeam.psd1" -Force
+          Invoke-AtomicTest T1574.006
+        shell: pwsh
+      - run: |
+          Import-Module "C:\AtomicRedTeam\invoke-atomicredteam\Invoke-AtomicRedTeam.psd1" -Force
+          Invoke-AtomicTest T1574.009
+        shell: pwsh
+      - run: |
+          Import-Module "C:\AtomicRedTeam\invoke-atomicredteam\Invoke-AtomicRedTeam.psd1" -Force
+          Invoke-AtomicTest T1574.011
+        shell: pwsh
+      - run: |
+          Import-Module "C:\AtomicRedTeam\invoke-atomicredteam\Invoke-AtomicRedTeam.psd1" -Force
+          Invoke-AtomicTest T1574.012
         shell: pwsh
 
       - run: |
