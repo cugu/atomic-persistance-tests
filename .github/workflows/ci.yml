@@ -363,10 +363,10 @@ jobs:
           Import-Module "C:\AtomicRedTeam\invoke-atomicredteam\Invoke-AtomicRedTeam.psd1" -Force
           Invoke-AtomicTest T1546.008
         shell: pwsh
-      - run: |
-          Import-Module "C:\AtomicRedTeam\invoke-atomicredteam\Invoke-AtomicRedTeam.psd1" -Force
-          Invoke-AtomicTest T1546.010
-        shell: pwsh
+      # - run: |
+      #     Import-Module "C:\AtomicRedTeam\invoke-atomicredteam\Invoke-AtomicRedTeam.psd1" -Force
+      #     Invoke-AtomicTest T1546.010
+      #   shell: pwsh
       # - run: |
       #     Import-Module "C:\AtomicRedTeam\invoke-atomicredteam\Invoke-AtomicRedTeam.psd1" -Force
       #     Invoke-AtomicTest T1546.011
