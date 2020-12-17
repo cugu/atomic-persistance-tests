@@ -1,0 +1,19 @@
+name: CI
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  build:
+    runs-on: windows-latest
+    steps:
+      - uses: actions/checkout@v2
+      - run: powershell -exec bypass .\eval1.ps1
+      - run: |
+          curl -o Autoruns.zip https://download.sysinternals.com/files/Autoruns.zip
+          7z x Autoruns.zip
+          .\Autoruns\autorunsc64.exe -c
+          .\Autoruns\autorunsc64.exe -c > autoruns.csv
