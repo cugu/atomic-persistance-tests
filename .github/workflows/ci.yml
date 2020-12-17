@@ -11,11 +11,11 @@ jobs:
     runs-on: windows-latest
     steps:
       - uses: actions/checkout@v2
-      - run: dd if="\\.\C:" of=disk.dd bs=4096
-      - uses: actions/upload-artifact@v2
-        with:
-          name: disk.dd
-          path: disk.dd
+      # - run: dd if="\\.\C:" of=disk.dd bs=4096
+      # - uses: actions/upload-artifact@v2
+      #   with:
+      #     name: disk.dd
+      #     path: disk.dd
       - run: |
           IEX (IWR 'https://raw.githubusercontent.com/redcanaryco/invoke-atomicredteam/master/install-atomicredteam.ps1' -UseBasicParsing)
           Install-AtomicRedTeam -getAtomics
