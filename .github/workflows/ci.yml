@@ -544,6 +544,9 @@ jobs:
         run: |
           curl -o Autoruns.zip https://download.sysinternals.com/files/Autoruns.zip
           7z x Autoruns.zip -oAutoruns
-          ./Autoruns/autorunsc64.exe -c -accepteula
           ./Autoruns/autorunsc64.exe -c -accepteula > autoruns.csv
         shell: bash
+      - uses: actions/upload-artifact@v2
+        with:
+          name: autoruns.csv
+          path: autoruns.csv
