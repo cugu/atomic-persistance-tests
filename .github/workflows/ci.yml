@@ -51,6 +51,7 @@ jobs:
           Import-Module "C:\AtomicRedTeam\invoke-atomicredteam\Invoke-AtomicRedTeam.psd1" -Force
           Invoke-AtomicTest T1053.005 -GetPrereqs
         shell: pwsh
+        # T1053.005-5 fails missing Word
       - run: |
           Import-Module "C:\AtomicRedTeam\invoke-atomicredteam\Invoke-AtomicRedTeam.psd1" -Force
           Invoke-AtomicTest T1078.001 -GetPrereqs
@@ -63,6 +64,7 @@ jobs:
           Import-Module "C:\AtomicRedTeam\invoke-atomicredteam\Invoke-AtomicRedTeam.psd1" -Force
           Invoke-AtomicTest T1098 -GetPrereqs
         shell: pwsh
+        # T1098-2 fails missing AD
       - run: |
           Import-Module "C:\AtomicRedTeam\invoke-atomicredteam\Invoke-AtomicRedTeam.psd1" -Force
           Invoke-AtomicTest T1098.004 -GetPrereqs
@@ -71,6 +73,7 @@ jobs:
           Import-Module "C:\AtomicRedTeam\invoke-atomicredteam\Invoke-AtomicRedTeam.psd1" -Force
           Invoke-AtomicTest T1133 -GetPrereqs
         shell: pwsh
+        # T1133-1 fails missing Chrome
       - run: |
           Import-Module "C:\AtomicRedTeam\invoke-atomicredteam\Invoke-AtomicRedTeam.psd1" -Force
           Invoke-AtomicTest T1136.001 -GetPrereqs
@@ -95,10 +98,12 @@ jobs:
           Import-Module "C:\AtomicRedTeam\invoke-atomicredteam\Invoke-AtomicRedTeam.psd1" -Force
           Invoke-AtomicTest T1505.001 -GetPrereqs
         shell: pwsh
+        # Missing T1505.001 yaml
       - run: |
           Import-Module "C:\AtomicRedTeam\invoke-atomicredteam\Invoke-AtomicRedTeam.psd1" -Force
           Invoke-AtomicTest T1505.002 -GetPrereqs
         shell: pwsh
+        #  T1505.002-1 fails missing Microsoft Exchange SnapIn
       - run: |
           Import-Module "C:\AtomicRedTeam\invoke-atomicredteam\Invoke-AtomicRedTeam.psd1" -Force
           Invoke-AtomicTest T1505.003 -GetPrereqs
@@ -123,10 +128,10 @@ jobs:
           Import-Module "C:\AtomicRedTeam\invoke-atomicredteam\Invoke-AtomicRedTeam.psd1" -Force
           Invoke-AtomicTest T1546.001 -GetPrereqs
         shell: pwsh
-      - run: |
-          Import-Module "C:\AtomicRedTeam\invoke-atomicredteam\Invoke-AtomicRedTeam.psd1" -Force
-          Invoke-AtomicTest T1546.002 -GetPrereqs
-        shell: pwsh
+      # - run: |
+      #     Import-Module "C:\AtomicRedTeam\invoke-atomicredteam\Invoke-AtomicRedTeam.psd1" -Force
+      #     Invoke-AtomicTest T1546.002 -GetPrereqs
+      #   shell: pwsh
       - run: |
           Import-Module "C:\AtomicRedTeam\invoke-atomicredteam\Invoke-AtomicRedTeam.psd1" -Force
           Invoke-AtomicTest T1546.003 -GetPrereqs
@@ -255,6 +260,7 @@ jobs:
           Import-Module "C:\AtomicRedTeam\invoke-atomicredteam\Invoke-AtomicRedTeam.psd1" -Force
           Invoke-AtomicTest T1053.005
         shell: pwsh
+        # Errors
       - run: |
           Import-Module "C:\AtomicRedTeam\invoke-atomicredteam\Invoke-AtomicRedTeam.psd1" -Force
           Invoke-AtomicTest T1078.001
@@ -327,10 +333,11 @@ jobs:
           Import-Module "C:\AtomicRedTeam\invoke-atomicredteam\Invoke-AtomicRedTeam.psd1" -Force
           Invoke-AtomicTest T1543.004
         shell: pwsh
-      - run: |
-          Import-Module "C:\AtomicRedTeam\invoke-atomicredteam\Invoke-AtomicRedTeam.psd1" -Force
-          Invoke-AtomicTest T1546.002
-        shell: pwsh
+      # - run: |
+      #     Import-Module "C:\AtomicRedTeam\invoke-atomicredteam\Invoke-AtomicRedTeam.psd1" -Force
+      #     Invoke-AtomicTest T1546.002
+      #   shell: pwsh
+      # Requires restart
       - run: |
           Import-Module "C:\AtomicRedTeam\invoke-atomicredteam\Invoke-AtomicRedTeam.psd1" -Force
           Invoke-AtomicTest T1546.003
