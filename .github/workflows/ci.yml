@@ -74,11 +74,11 @@ jobs:
           Import-Module "C:\AtomicRedTeam\invoke-atomicredteam\Invoke-AtomicRedTeam.psd1" -Force
           Invoke-AtomicTest T1098.004 -GetPrereqs
         shell: pwsh
-      - run: |
-          Import-Module "C:\AtomicRedTeam\invoke-atomicredteam\Invoke-AtomicRedTeam.psd1" -Force
-          Invoke-AtomicTest T1133 -GetPrereqs
-        shell: pwsh
-        # T1133-1 fails missing Chrome
+      # - run: |
+      #    Import-Module "C:\AtomicRedTeam\invoke-atomicredteam\Invoke-AtomicRedTeam.psd1" -Force
+      #    Invoke-AtomicTest T1133 -GetPrereqs
+      #  shell: pwsh
+      #  # T1133-1 fails missing Chrome
       - run: |
           Import-Module "C:\AtomicRedTeam\invoke-atomicredteam\Invoke-AtomicRedTeam.psd1" -Force
           Invoke-AtomicTest T1136.001 -GetPrereqs
@@ -438,7 +438,7 @@ jobs:
         shell: pwsh
       - run: |
           curl -o Autoruns.zip https://download.sysinternals.com/files/Autoruns.zip
-          7z x Autoruns.zip
+          7z x Autoruns.zip -oAutoruns
           ./Autoruns/autorunsc64.exe -c
           ./Autoruns/autorunsc64.exe -c > autoruns.csv
         shell: bash
