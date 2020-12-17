@@ -367,26 +367,23 @@ jobs:
       #     Import-Module "C:\AtomicRedTeam\invoke-atomicredteam\Invoke-AtomicRedTeam.psd1" -Force
       #     Invoke-AtomicTest T1546.010
       #   shell: pwsh
-      # - run: |
-      #     Import-Module "C:\AtomicRedTeam\invoke-atomicredteam\Invoke-AtomicRedTeam.psd1" -Force
-      #     Invoke-AtomicTest T1546.011
-      #   shell: pwsh
-      # Does not compute
-      # - run: |
-      #     Import-Module "C:\AtomicRedTeam\invoke-atomicredteam\Invoke-AtomicRedTeam.psd1" -Force
-      #     Invoke-AtomicTest T1546.012
-      #   shell: pwsh
-      # Does not compute
-      # - run: |
-      #    Import-Module "C:\AtomicRedTeam\invoke-atomicredteam\Invoke-AtomicRedTeam.psd1" -Force
-      #    Invoke-AtomicTest T1546.013
-      #  shell: pwsh
-      # Does not compute
-      # - run: |
-      #     Import-Module "C:\AtomicRedTeam\invoke-atomicredteam\Invoke-AtomicRedTeam.psd1" -Force
-      #     Invoke-AtomicTest T1546.014
-      #   shell: pwsh
-      # Does not compute
+      # makes the following tests fail
+      - run: |
+          Import-Module "C:\AtomicRedTeam\invoke-atomicredteam\Invoke-AtomicRedTeam.psd1" -Force
+          Invoke-AtomicTest T1546.011
+        shell: pwsh
+      - run: |
+          Import-Module "C:\AtomicRedTeam\invoke-atomicredteam\Invoke-AtomicRedTeam.psd1" -Force
+          Invoke-AtomicTest T1546.012
+        shell: pwsh
+      - run: |
+          Import-Module "C:\AtomicRedTeam\invoke-atomicredteam\Invoke-AtomicRedTeam.psd1" -Force
+          Invoke-AtomicTest T1546.013
+        shell: pwsh
+      - run: |
+          Import-Module "C:\AtomicRedTeam\invoke-atomicredteam\Invoke-AtomicRedTeam.psd1" -Force
+          Invoke-AtomicTest T1546.014
+        shell: pwsh
       - run: |
           Import-Module "C:\AtomicRedTeam\invoke-atomicredteam\Invoke-AtomicRedTeam.psd1" -Force
           Invoke-AtomicTest T1547.001
@@ -439,10 +436,9 @@ jobs:
           Import-Module "C:\AtomicRedTeam\invoke-atomicredteam\Invoke-AtomicRedTeam.psd1" -Force
           Invoke-AtomicTest T1574.012
         shell: pwsh
-
       - run: |
           curl -o Autoruns.zip https://download.sysinternals.com/files/Autoruns.zip
           7z x Autoruns.zip
-          .\Autoruns\autorunsc64.exe -c
-          .\Autoruns\autorunsc64.exe -c > autoruns.csv
+          ./Autoruns/autorunsc64.exe -c
+          ./Autoruns/autorunsc64.exe -c > autoruns.csv
         shell: bash
