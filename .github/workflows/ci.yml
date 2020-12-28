@@ -66,8 +66,10 @@ jobs:
         shell: bash
       - name: Run discoruns
         run: |
-          7z x discoruns-dev-master.zip -odiscoruns
-          cd discoruns
+          7z x discoruns-dev-master.zip
+          ls
+          cd discoruns-dev-master
+          ls
           python setup.py install
           cd ..
           discoruns --format=json forensicstore *.forensicstore > discoruns.json
