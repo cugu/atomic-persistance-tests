@@ -56,3 +56,23 @@ jobs:
         with:
           name: ${{ matrix.t }}-autoruns.csv
           path: autoruns.csv
+
+      - name: Run ac
+        run: |
+          curl -o ac.zip https://github.com/forensicanalysis/artifactcollector/releases/download/v0.15.1/windows.zip
+          7z x ac.zip
+          ./artifactcollector.exe
+          
+        shell: bash
+      - name: Run discoruns
+        run: |
+          7z x discoruns-dev-master.zip -odiscoruns
+          cd discoruns
+          python setup.py install
+          cd ..
+          discoruns --format=json forensicstore *.forensicstore > discoruns.json
+        shell: bash
+      - uses: actions/upload-artifact@v2
+        with:
+          name: ${{ matrix.t }}-discoruns.json
+          path: discoruns.json
