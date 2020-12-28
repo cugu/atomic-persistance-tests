@@ -70,10 +70,7 @@ jobs:
           python-version: '3.9'
       - name: Run discoruns
         run: |
-          7z x discoruns-dev-master.zip
-          cd discoruns-dev-master
-          python setup.py install
-          cd ..
+          pip install discoruns
           discoruns --format=json forensicstore *.forensicstore > discoruns.json
         shell: bash
       - uses: actions/upload-artifact@v2
