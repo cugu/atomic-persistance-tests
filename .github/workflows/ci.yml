@@ -59,7 +59,7 @@ jobs:
 
       - name: Run ac
         run: |
-          curl -Lo ac.zip https://github.com/forensicanalysis/artifactcollector/releases/download/v0.15.4/windows.zip
+          curl -Lo ac.zip https://github.com/forensicanalysis/artifactcollector/releases/download/v0.15.6/windows.zip
           7z x ac.zip
           ./artifactcollector.exe
           
