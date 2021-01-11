@@ -7,7 +7,45 @@ on:
     branches: [ main ]
 
 jobs:
-  build:
+  empty:
+    runs-on: windows-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+
+      - name: Run autoruns
+        run: |
+          curl -o Autoruns.zip https://download.sysinternals.com/files/Autoruns.zip
+          7z x Autoruns.zip -oAutoruns
+          ./Autoruns/autorunsc64.exe -c -accepteula > autoruns.csv
+        shell: bash
+      - uses: actions/upload-artifact@v2
+        with:
+          name: empty-autoruns.csv
+          path: autoruns.csv
+
+      - name: Run ac
+        run: |
+          curl -Lo ac.zip https://github.com/forensicanalysis/artifactcollector/releases/download/v0.15.6/windows.zip
+          7z x ac.zip
+          ./artifactcollector.exe
+          
+        shell: bash
+      - name: Set up Python
+        uses: actions/setup-python@v2
+        with:
+          python-version: '3.9'
+      - name: Run discoruns
+        run: |
+          pip install discoruns
+          discoruns --format=json forensicstore *.forensicstore > discoruns.json
+        shell: bash
+      - uses: actions/upload-artifact@v2
+        with:
+          name: empty-discoruns.json
+          path: discoruns.json
+
+  test:
     runs-on: windows-latest
     strategy:
       matrix:
