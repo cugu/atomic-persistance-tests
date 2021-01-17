@@ -17,7 +17,7 @@ jobs:
         run: |
           curl -o Autoruns.zip https://download.sysinternals.com/files/Autoruns.zip
           7z x Autoruns.zip -oAutoruns
-          ./Autoruns/autorunsc64.exe -c -accepteula > autoruns.csv
+          ./Autoruns/autorunsc64.exe -a * -c -accepteula > autoruns.csv
         shell: bash
       - uses: actions/upload-artifact@v2
         with:
@@ -88,7 +88,7 @@ jobs:
         run: |
           curl -o Autoruns.zip https://download.sysinternals.com/files/Autoruns.zip
           7z x Autoruns.zip -oAutoruns
-          ./Autoruns/autorunsc64.exe -c -accepteula > autoruns.csv
+          ./Autoruns/autorunsc64.exe -a * -c -accepteula > autoruns.csv
         shell: bash
       - uses: actions/upload-artifact@v2
         with:
@@ -115,3 +115,19 @@ jobs:
         with:
           name: ${{ matrix.t }}-discoruns.json
           path: discoruns.json
+
+  summary:
+    needs: [test, empty]
+    steps:
+      - uses: actions/download-artifact@v2
+        with:
+          path: reports
+          
+      - name: Display structure of downloaded files
+        run: ls -R
+        working-directory: reports
+      - uses: actions/upload-artifact@v2
+        with:
+          name: reports
+          path: reports
+
