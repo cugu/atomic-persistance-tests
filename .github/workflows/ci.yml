@@ -110,11 +110,17 @@ jobs:
         run: |
           pip install discoruns
           discoruns --format=json forensicstore *.forensicstore > discoruns.json
+          mv *.forensicstore ${{ matrix.t }}.forensicstore
         shell: bash
       - uses: actions/upload-artifact@v2
         with:
           name: ${{ matrix.t }}-discoruns.json
           path: discoruns.json
+      - uses: actions/upload-artifact@v2
+        with:
+          name: ${{ matrix.t }}.forensicstore
+          path: discoruns.forensicstore
+
 
   summary:
     needs: [test, empty]
