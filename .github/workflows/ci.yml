@@ -119,7 +119,7 @@ jobs:
       - uses: actions/upload-artifact@v2
         with:
           name: ${{ matrix.t }}.forensicstore
-          path: discoruns.forensicstore
+          path: ${{ matrix.t }}.forensicstore
 
 
   summary:
